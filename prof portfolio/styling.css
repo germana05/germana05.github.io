@@ -1,0 +1,276 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #EBE0D6;
+}
+
+.top-image img{
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.home-text{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-home{
+    max-width: 400px;
+}
+
+.home-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.text-boven-button p{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: #000000;
+}
+
+.button-homepage{
+    background-color: #22333C;
+    border-radius: 30px;
+    color: #EBE0D6;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.home-text h1{
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.home-text p{
+    margin-top: 30px;
+    color: #000000;
+}
+
+.container1{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.container2{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: #C6AD8F;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.container-text{
+    flex: 1;
+    padding: 0 10px;
+}
+
+.container-text h2{
+    justify-content: left;
+    display: flex;
+}
+
+.container-text2{
+    flex: 1;
+    padding: 0 10px;
+    color: #000000;
+}
+
+.container-text2 h2{
+    margin-right: 20px;
+    justify-content: right;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.container-image{
+    width: 200px;
+}
+
+.header{
+    padding: 20px 20px;
+    background: #C6AD8F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 32px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.game-card a{
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #EBE0D6;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+footer{
+    margin-top: auto;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #C6AD8F;
+    text-align: center;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #C6AD8F;
+    color: #000000;
+}
+
+.footer div{
+    flex: 1;
+    margin: 20px;
+}
+
+.footer h2 {
+    text-align: center;
+}
+
+.footer p{
+    text-align: center;
+}
+
+.albumcontainer{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+
+.blenderimages{
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.personalimages{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* de aanvinkbare cirkels verbergen */
+.menu input[type="radio"] {
+    display: none;
+}
+
+/* de genres stylen */
+.menu {
+    text-align: center;
+    padding: 20px;
+    background-color: #EBE0D6;
+    margin-top: 0;
+}
+
+.menu label {
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* maakt de aangevinkte genre blauw */
+.menu input[type="radio"]:checked + label {
+    color: #C6AD8F;
+}
+
+/* Game Grid Section */
+.game-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+    display: none;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.game-card p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
