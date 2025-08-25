@@ -15,7 +15,7 @@ body{
     height: 200px;
     display: block;
     object-fit: cover;
-    object-position: 50% 50%;
+    object-position: 50% 35%;
 }
 
 .home-text{
