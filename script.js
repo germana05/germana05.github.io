@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const textRadio = document.getElementById('text');
     const gameCards = document.querySelectorAll('.game-card');
 
-    // Functie om de kaarten te filteren
     function filterGames(category) {
         gameCards.forEach(card => {
             if (category === 'all') {
@@ -19,13 +18,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Event listeners toevoegen aan de radio buttons
     allRadio.addEventListener('change', () => filterGames('all'));
     vrRadio.addEventListener('change', () => filterGames('vr'));
     twoDRadio.addEventListener('change', () => filterGames('2D'));
     threeDRadio.addEventListener('change', () => filterGames('3D'));
     textRadio.addEventListener('change', () => filterGames('text'));
 
-    // Initialisatie: Toon alle games
     filterGames('all');
 });
